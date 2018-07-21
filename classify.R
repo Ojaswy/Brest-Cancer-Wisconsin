@@ -1,6 +1,4 @@
 library(RTextTools);
-
-# GET THE BREAST CANCER DATA FROM http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.names
 data <- read.csv("http://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/breast-cancer-wisconsin.data",header=FALSE)
 data <- data[-1]
 
@@ -40,11 +38,5 @@ results <- classify_models(container, models)
 
 # VIEW THE RESULTS BY CREATING ANALYTICS
 analytics <- create_analytics(container, results)
-
 # RESULTS WILL BE REPORTED BACK IN THE analytics VARIABLE.
-# analytics@algorithm_summary: SUMMARY OF PRECISION, RECALL, F-SCORES, AND ACCURACY SORTED BY TOPIC CODE FOR EACH ALGORITHM
-# analytics@label_summary: SUMMARY OF LABEL (e.g. TOPIC) ACCURACY
-# analytics@document_summary: RAW SUMMARY OF ALL DATA AND SCORING
-# analytics@ensemble_summary: SUMMARY OF ENSEMBLE PRECISION/COVERAGE. USES THE n VARIABLE PASSED INTO create_analytics()
 
-#analytics@ensemble_summary
