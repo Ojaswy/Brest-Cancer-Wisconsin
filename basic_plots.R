@@ -2,7 +2,7 @@
 bc_data <- read.table("datasets/breast-cancer-wisconsin.data.txt", 
                       header = FALSE, 
                       sep = ",")
-#column names
+#names of the columns
 colnames(bc_data) <- c("sample_code_number", 
                        "clump_thickness", 
                        "uniformity_of_cell_size", 
