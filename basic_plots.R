@@ -20,7 +20,7 @@ bc_data$classes <- ifelse(bc_data$classes == "2", "benign",
 
 bc_data[bc_data == "?"] <- NA
 
-# how many NAs are in the data
+# number of NAs in the data
 length(which(is.na(bc_data)))
 ## [1] 16
 # how many samples would we loose, if we removed them?
